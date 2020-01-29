@@ -1,4 +1,4 @@
-package com.algorithm.base.array;
+package com.algorithm.base.array.leetcode15;
 
 import com.algorithm.base.array.leetcode15.ThreeSum;
 import org.junit.Assert;

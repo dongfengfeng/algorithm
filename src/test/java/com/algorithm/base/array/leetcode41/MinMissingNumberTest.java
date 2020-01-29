@@ -1,4 +1,4 @@
-package com.algorithm.base.array;
+package com.algorithm.base.array.leetcode41;
 
 import com.algorithm.base.array.leetcode41.MinMissingNumber;
 import org.junit.Assert;
