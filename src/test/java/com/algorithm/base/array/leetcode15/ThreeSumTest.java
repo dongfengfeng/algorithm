@@ -9,7 +9,7 @@ import java.util.List;
 /**
  * @author dongfengfeng on 2020-01-29
  */
-public class ThreeSumTest {
+public class ThreeSumTest  {
     @Test
     public void test() {
         int[] array = new int[] {-1, 0, 1, 2, -1, -4, 4};
