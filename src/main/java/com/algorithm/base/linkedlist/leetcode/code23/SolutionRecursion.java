@@ -1,6 +1,7 @@
 package com.algorithm.base.linkedlist.leetcode.code23;
 
-import com.liujun.datastruct.base.datastruct.linkedlist.leetcode.LinkedListBase;
+
+import com.algorithm.base.linkedlist.leetcode.LinkedListBase;
 
 /**
  * 使用递归来解决此合并链表的问题

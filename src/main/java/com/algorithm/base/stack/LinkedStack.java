@@ -1,6 +1,5 @@
 package com.algorithm.base.stack;
 
-import com.liujun.datastruct.base.datastruct.linkedlist.implement.MyLinkedNode;
 
 /**
  * 使用数组实现一个顺序栈

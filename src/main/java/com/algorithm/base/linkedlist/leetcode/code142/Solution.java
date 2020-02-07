@@ -1,6 +1,7 @@
 package com.algorithm.base.linkedlist.leetcode.code142;
 
-import com.liujun.datastruct.base.datastruct.linkedlist.leetcode.LinkedListBase;
+
+import com.algorithm.base.linkedlist.leetcode.LinkedListBase;
 
 /**
  * 返回环形链表

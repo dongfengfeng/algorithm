@@ -1,6 +1,7 @@
 package com.algorithm.base.stack.leetcode.leetcode32;
 
-import com.liujun.datastruct.base.datastruct.stack.LinkedStack;
+
+import com.algorithm.base.stack.LinkedStack;
 
 /**
  * 进行最长的有效括号匹配

@@ -1,6 +1,7 @@
 package com.algorithm.base.linkedlist.leetcode.code23;
 
-import com.liujun.datastruct.base.datastruct.linkedlist.leetcode.LinkedListBase;
+
+import com.algorithm.base.linkedlist.leetcode.LinkedListBase;
 
 /**
  * 合并多个有序的单链表

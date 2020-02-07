@@ -1,6 +1,7 @@
 package com.algorithm.base.linkedlist.leetcode.code25;
 
-import com.liujun.datastruct.base.datastruct.linkedlist.leetcode.LinkedListBase;
+
+import com.algorithm.base.linkedlist.leetcode.LinkedListBase;
 
 /**
  * k个一组的翻转链表
