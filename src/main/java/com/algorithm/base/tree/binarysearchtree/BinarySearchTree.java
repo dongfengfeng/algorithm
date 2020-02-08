@@ -53,7 +53,7 @@ public class BinarySearchTree {
         }
         return null;
     }
-    
+
     public void delete(int value) {
         TreeNode findNode = root;
         TreeNode findNodeParent = root;
