@@ -24,11 +24,11 @@ public class QuickSort<T> implements Sort<T> {
     private int partition(T[] data, int left, int right) {
         T tmpData = data[left];
         while (left < right) {
-            if (left < right && ((Comparable)tmpData).compareTo(data[right]) <= 0) {
+            while (left < right && ((Comparable)tmpData).compareTo(data[right]) <= 0) {
                 right--;
             }
             data[left] = data[right];
-            if (left < right && ((Comparable)tmpData).compareTo(data[left]) >= 0) {
+            while (left < right && ((Comparable)tmpData).compareTo(data[left]) >= 0) {
                 left++;
             }
             data[right] = data[left];

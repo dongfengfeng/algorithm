@@ -23,7 +23,7 @@ public class MaxCommonChars {
             }
             return;
         }
-        
+
         if (src[i] == target[j]) {
             count(src, target, i+1, j+1, sumValues+1);
         } else {
