@@ -1,5 +1,7 @@
 package com.algorithm.base.sort;
 
+import java.util.Arrays;
+
 /**
  * @author dongfengfeng on 2020-02-12
  */
@@ -37,4 +39,10 @@ public class QuickSort<T> implements Sort<T> {
         return left;
     }
 
+    public static void main(String[] args) {
+        Integer[] data = {23,142,53,24,524,62,2,50,20,28,98,51,444,241,342,10};
+        QuickSort<Integer> mergeSort = new QuickSort<>();
+        mergeSort.sort(data);
+        System.out.println(Arrays.toString(data));
+    }
 }
