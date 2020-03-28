@@ -1,12 +1,16 @@
 package com.algorithm.base.sort.leetcode.merge;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 /**
  * @author dff on 2020-03-26
  */
 public class Solution {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        int[][] ints = new int[][]{{1,4},{5,6}};
+        int[][] ints = new int[][]{{1,3},{2,6},{8,10},{15,18}};
         solution.merge(ints);
     }
 
@@ -20,23 +24,18 @@ public class Solution {
             return intervals;
         }
         int i = 0;
-        int j = 1;
-        int[][] result = new int[intervals.length][2];
-        result[0] = intervals[0];
-        while (i < result.length && j < intervals.length) {
-            if (result[i][1] >= intervals[j][1]) {
+        List<int[]> tmp = new ArrayList<>();
+        Arrays.sort(intervals, (o1, o2) -> o1[0] - o2[0]);
+        while (i < intervals.length) {
+            int left = intervals[i][0];
+            int right = intervals[i][1];
+            while (i<intervals.length-1 && intervals[i+1][0] <= right) {
                 i++;
-                j++;
-            } else if (result[i][1] >= intervals[j][0]) {
-                result[i++][1] = intervals[j++][1];
-            } else {
-                result[i++] = intervals[j++];
+                right = Math.max(intervals[i][1], right);
             }
+            tmp.add(new int[]{left, right});
+            i++;
         }
-        int[][] r = new int[i][2];
-        for (int k = 0; k < i; k++) {
-            r[k] = result[k];
-        }
-        return r;
+        return tmp.toArray(new int[0][]);
     }
 }
